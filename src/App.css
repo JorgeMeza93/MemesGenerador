@@ -8,6 +8,7 @@ html {
 }
 .App{
   background-color: #000;
+  color: #fff;
 }
 .container{
   max-width: 120rem;
@@ -110,6 +111,7 @@ html {
 }
 .memes__box{
   margin-bottom: 2rem;
+  position: relative;
 }
 .memes__box:last-child{
   margin-bottom: 0;
@@ -145,4 +147,35 @@ html {
 /* imagen JS */
 .imagenSeleccionada{
   box-shadow: 0 0 10px 7px #1571fa;;
+}
+/* Memes JS */
+.meme1, .meme2, .meme3, .meme4{
+  font-size: 2.2rem;
+  color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 12px #000;
+}
+@media(min-width: 768px){
+  .meme1, .meme2, .meme3, .meme4{
+    font-size: 2.5rem;
+  }
+}
+@media(min-width: 1200px){
+  .meme1, .meme2, .meme3, .meme4{
+    font-size: 2.9rem;
+  }
+}
+.meme1{
+  position: absolute;
+  top: 1rem;
+  left: 2.5rem;
+  width: 46rem;
+}
+.meme2{
+  position: absolute;
+  bottom: 1rem;
+  left: 2.5rem;
+  width: 46rem;
 }
