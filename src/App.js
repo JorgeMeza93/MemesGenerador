@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import { useState } from "react";
 import './App.css';
+import html2canvas from "html2canvas";
 
 function App() {
   
@@ -33,6 +34,7 @@ function App() {
     array.forEach( elemento =>{
       if(elemento.getAttribute("data-id")==idImagen){
         divImagen = elemento.parentElement
+        divImagen.classList.add("choosen");
       }
     });
     switch(idImagen){
@@ -74,7 +76,13 @@ function App() {
   }
 
   function onClickExportar(){
-    
+    html2canvas(document.querySelector(".choosen")).then(canvas => {
+    var img = canvas.toDataURL("image/png");
+    var link = document.createElement("a");
+    link.download = "meme.png";
+    link.href = img;
+    link.click();
+  });
   }
 
   return (

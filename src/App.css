@@ -82,6 +82,7 @@ html {
   border-radius: 12px;
   transition-property: "background-color";
   transition-duration: .4s;
+  text-align: center;
 }
 @media(min-width: 768px){
   .meme__boton{
