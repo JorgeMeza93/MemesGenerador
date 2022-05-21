@@ -1,0 +1,148 @@
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.App{
+  background-color: #000;
+}
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Meme */
+
+.heading{
+  font-size: 3.5rem;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 1rem 0 3rem 0;
+  font-family: 'Koulen', cursive;
+}
+@media(min-width: 768px){
+  .heading{
+    font-size: 4.5rem;
+  }
+}
+.meme{
+  display: none;
+  max-width: 120rem;
+  margin: auto;
+}
+.meme__field{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(2,0,36,1) 0%, rgba(204,16,16,1) 0%, #6600ff 100%);
+  padding: 3rem 1rem;
+  border-radius: 2rem;
+}
+.meme__input{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto;
+}
+@media(min-width: 768px){
+  .meme__input{
+    flex-direction: row ;
+    align-items: center;
+  }
+}
+.meme__input label{
+  font-size: 1.7rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+.meme__texto{
+  padding: .5rem 0;
+  font-size: 2rem;
+}
+.boton{
+  width: 90%;
+}
+.meme__boton{
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+  width: 90%;
+  padding: .7rem;
+  background-color: #c21717;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  transition-property: "background-color";
+  transition-duration: .4s;
+}
+@media(min-width: 768px){
+  .meme__boton{
+    width: 30%;
+    margin: 3rem auto 0 auto;
+  }
+}
+.meme__boton:hover{
+  background-color: #6600ff ;
+}
+
+/* memes */
+.memes__grid{
+  display: grid;
+  grid-template-columns: 1;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 3rem;
+
+}
+@media(min-width: 768px){
+  .memes__grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.memes__box{
+  margin-bottom: 2rem;
+}
+.memes__box:last-child{
+  margin-bottom: 0;
+}
+@media(min-width: 768px){
+  .memes__box{
+    margin: 0;
+  }
+}
+.memes__img{
+  width: 30rem;
+  height: 30rem;
+}
+@media(min-width: 768px){
+  .memes__img{
+    width: 35rem;
+    height: 35rem;
+  }
+}
+@media(min-width: 1000px){
+  .memes__img{
+    width: 50rem;
+    height: 50rem;
+  }
+}
+@media(min-width: 1200px){
+  .memes__img{
+    width: 55rem;
+    width: 55rem;
+  }
+}
+
+/* imagen JS */
+.imagenSeleccionada{
+  box-shadow: 0 0 10px 7px #1571fa;;
+}
